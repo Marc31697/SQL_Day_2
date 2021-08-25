@@ -1,0 +1,14 @@
+ALTER TABLE customer
+ADD age_group VARCHAR(100);
+
+ALTER TABLE customer
+DROP COLUMN age_group;
+
+ALTER TABLE customer
+ADD email VARCHAR(150);
+
+UPDATE customer
+SET email = 'fakeemail@email.com'
+WHERE customer_id = 1;
+
+SELECT * FROM customer;

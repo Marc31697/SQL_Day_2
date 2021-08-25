@@ -1,0 +1,81 @@
+-- customer inserts
+INSERT INTO customer(
+	customer_id,
+	first_name,
+	last_name,
+	address,
+	billing_info
+)VALUES(
+	1,
+	'Shay',
+	'O''Neill',
+	'1031 Halloween Lane, Salem, Massachusetts',
+	'8757-2013-5614-4902 030 10/31'
+);
+
+-- studio inserts
+INSERT INTO studio(
+	studio_id,
+	studio_name,
+	contact_number,
+	address
+)VALUES(
+	1,
+	'Black Cat Studios',
+	'732-569-0823',
+	'1313 Lucky Lane, Hollywood, CA'
+);
+
+-- tickets inserts
+INSERT INTO tickets(
+	ticket_id,
+	barcode,
+	product_amount
+)VALUES(
+	1,
+	123456789001,
+	2
+);
+
+-- movies inserts
+INSERT INTO movies(
+	movie_id,
+	movie_name,
+	show_time,
+	studio_id,
+	ticket_id
+)VALUES(
+	1,
+	'Scream 3',
+	'8:30',
+	1,
+	1
+);
+
+-- order_ inserts
+INSERT INTO order_(
+	order_id,
+	sub_total,
+	total_cost,
+	customer_id,
+	ticket_id,
+	concession_id
+)VALUES(
+	1,
+	12.00,
+	14.69,
+	1,
+	1,
+	1
+);
+
+-- concessions inserts
+INSERT INTO concessions(
+	concession_id,
+	product_name,
+	amount
+)VALUES(
+	1,
+	'Blue Raspberry Slurpee',
+	2
+);
